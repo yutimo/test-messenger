@@ -29,8 +29,8 @@ module.exports = {
     extensions: ['*', '.js', '.jsx']
   },
   output: {
-    path: __dirname + '/docs',
-    publicPath: '/test-messenger/',
+    path: __dirname + '/dist',
+    publicPath: '/',
     filename: 'bundle.js'
   },
   plugins: [

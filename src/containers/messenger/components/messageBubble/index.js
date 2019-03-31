@@ -8,7 +8,7 @@ const MessageBubbleWrapper = styled.div`
   justify-content: ${props => props.type === 'incoming' ? 'flex-end' : 'flex-right'};
   margin: 0 0 11px 0;
   
-  .last-bubble-of-type-wr {
+  &.last-bubble-of-type-wr {
     margin: 0 0 25px 0;
   }
 `;
@@ -70,7 +70,7 @@ const MessageBubbleContainer = styled.div`
       width: 0;
       height: 0;
       left: 0;
-      bottom: -12px;
+      bottom: -13px;
       border: 7px solid;
       border-color: rgba(255,255,255,1) transparent transparent rgba(255,255,255,1);
     }

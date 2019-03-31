@@ -30,7 +30,7 @@ module.exports = {
   },
   output: {
     path: __dirname + '/docs',
-    publicPath: '/test-messenger',
+    publicPath: '/test-messenger/',
     filename: 'bundle.js'
   },
   plugins: [

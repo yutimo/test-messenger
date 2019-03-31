@@ -8,7 +8,7 @@ const RecipientBlockWrapper = styled.div`
 
 const RecipientBlockContainer = styled.div`
   position: relative;
-  padding: 24px 0 8px 0;
+  padding: 24px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,14 +18,14 @@ const RecipientBlockContainer = styled.div`
 
 const RecipientName = styled.div`
   font-size: 16px;
-  line-height: 25px;
+  line-height: 20px;
   font-weight: 500;
   color: rgba(51, 51, 51, 1);
 `;
 
 const RecipientPhoto = styled.img`
   position: absolute;
-  top: 12px;
+  top: 16px;
   right: 20px;
   width: 36px;
   height: 36px;

@@ -27,6 +27,17 @@ const MessageBubbleContainer = styled.div`
   border-radius: 10px;
   font-size: 16px;
   line-height: 20px;
+  animation: fadeIn 0.5s ease-out;
+  
+  @keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+  }
   
   &.outcoming {
     background: rgba(255, 255, 255, 1);

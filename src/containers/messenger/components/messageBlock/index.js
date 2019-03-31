@@ -11,14 +11,16 @@ const MessageBlockWrapper = styled.div`
 `;
 
 const MessageBlockContainer = styled.div`
-  width: calc(100% + 15px); // to hide scroll bar
+  width: 100%; 
   height: 100%;
   overflow-y: scroll;
   box-sizing: content-box;
+  padding: 0 17px 0 0; // to hide scroll bar
 `;
 
 const MessageBlockContent = styled.div`
   padding: 15px;
+  width: calc(100% - 17px);
 `;
 
 export default class MessageBlock extends React.Component {

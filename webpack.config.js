@@ -1,5 +1,7 @@
 /* eslint-disable*/
 const webpack = require('webpack');
+const path = require('path');
+const root = path.resolve(__dirname, '.');
 
 module.exports = {
   entry: './src/index.js',
@@ -29,8 +31,8 @@ module.exports = {
     extensions: ['*', '.js', '.jsx']
   },
   output: {
-    path: __dirname + '/dist',
-    publicPath: '/',
+    path: path.resolve(root, process.env.OUTPUT_PATH || '/dist'),
+    publicPath: process.env.PUBLIC_PATH || '/',
     filename: 'bundle.js'
   },
   plugins: [

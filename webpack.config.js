@@ -20,8 +20,7 @@ module.exports = {
       {
         test: /\.svg$|\.png$|\.jpg$|\.jpeg$|\.gif$|\.otf$|\.ttf$|\.woff$|\.eot$|\.woff2$/,
         use: [
-          'url-loader?limit=25000&name=[path][name].[hash].[ext]',
-          // 'image-webpack-loader',
+          'url-loader?limit=25000&name=[path][name].[hash].[ext]'
         ],
       },
     ]
@@ -30,8 +29,8 @@ module.exports = {
     extensions: ['*', '.js', '.jsx']
   },
   output: {
-    path: __dirname + '/dist',
-    publicPath: '/',
+    path: __dirname + '/docs',
+    publicPath: '/test-messenger',
     filename: 'bundle.js'
   },
   plugins: [
